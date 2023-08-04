@@ -1,0 +1,14 @@
+/* DON'T EDIT THE CODE IN THIS FILE */
+
+html, body {
+  margin: 10;
+  padding: 10;
+  color: white;
+  background: gray;
+  font-family: "Poppins", Arial;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: "Poppins-Medium.ttf";
+}

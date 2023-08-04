@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      // TODO: Add your JavaScript code here
+      function printDavesLocation(){
+        let ans = document.getElementById("myInput").value.toLowerCase();
+        let newElements = document.createElement('h2');
+        
+        if(ans == "yes"){
+          let newNode = document.createTextNode("Dave is climbing a tree in the backyard!");
+          newElements.appendChild(newNode);
+          document.getElementById("writeAnswer").appendChild(newElements);
+        }
+
+        else {
+          let newNode = document.createTextNode("Please help me find Dave!");
+          newElements.appendChild(newNode);
+          document.getElementById("writeAnswer").appendChild(newElements);
+        }
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <!-- TODO: Add your HTML code here -->
+    <div>
+      <h1>
+        Have you seen Dave? He's my cat. 
+      </h1>
+      <textarea id = "myInput"></textarea>
+      <button onclick = "printDavesLocation()">Find Dave!</button>
+
+    </div>
+    <div id = "writeAnswer"></div>
+  </body>
+</html>
